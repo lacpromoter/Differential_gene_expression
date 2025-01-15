@@ -1,0 +1,7 @@
+#SampleName,GroupName,ReadConfig,Strand,PI
+S1_control,control,PE,reverse,YL
+S2_control,control,PE,reverse,YL
+S3_control,control,PE,reverse,YL
+S4_KO,KO,PE,reverse,YL
+S5_KO,KO,PE,reverse,YL
+S6_KO,KO,PE,reverse,YL
