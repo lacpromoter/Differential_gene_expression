@@ -5,22 +5,24 @@ Func_Usage()
 cat << __EOF
 ========================================================================================
 Usage: `basename $0` 
-    1. <Script.R>	This Rscipt will be used. Mostly sample place as the shell script
+    1. <Script.R>	    This Rscipt will be used. Mostly sample place as the shell script
     2. <CountsFile>     Counts file with first col as features
-    3. <SAMPLE_FILE>    Sample information file. Should be a csv like below:
+    3. <SAMPLE_FILE>    Sample information file with full path. Should be a csv like below:
                         #SampleName,GroupName,ReadConfig,Strand,PI
-                        Mut_123,MUT,PE,fr-stranded,PIKA
-                        Mut_265,MUT,PE,fr-stranded,PIKA
-    4. <OUT_DIR>        /FullPath/ to OutDir
+                        S1_control,control,PE,reverse,YL
+                        S2_control,control,PE,reverse,YL
+                        S3_KO,KO,PE,reverse,YL
+                        S4_KO,KO,PE,reverse,YL
+    4. <OUT_DIR>        FullPath to OutDir
     5. <EDGER_BCV>      edgeR BCV values can be:
                         edgeR_BCV == 2    for Biological (any species)
                         edgeR_BCV == 0.01 for Technical (any species)
                         edgeR_BCV == 0.1  for None (inbreeding organism i.e. mouse, fly etc..)
                         edgeR_BCV == 0.4  for None (outbreeding organism i.e. human)
-    6. <CONTRAST_FILE>  /FullPath/ to contrast file. Should be a csv like below:
+    6. <CONTRAST_FILE>  Contrast file wit hfull path. Should be a csv like below:
                         condition_A,condition_B
-                        WT,MUT
-    7. <TPM_file>       /FullPath/ to TPM file.
+                        control,KO
+    7. <TPM_file>       TPM file with full path (genes.feature_count.tab)
     8. <AnnotationFile> File with annotations. Relevant column should be named as FEATURE_NAME.
                         Can be none.
 ========================================================================================
