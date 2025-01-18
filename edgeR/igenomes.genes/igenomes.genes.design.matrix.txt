@@ -1,0 +1,13 @@
+           control KO
+S1_control       1  0
+S2_control       1  0
+S3_control       1  0
+S4_KO            0  1
+S5_KO            0  1
+S6_KO            0  1
+attr(,"assign")
+[1] 1 1
+attr(,"contrasts")
+attr(,"contrasts")$`sample_info$groupID`
+[1] "contr.treatment"
+
